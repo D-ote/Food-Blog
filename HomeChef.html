@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@200&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="HomeChef.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="backdrop">
+      <div class="navbar">
+        <div class="logo">Homechef</div>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="navbarList">
+          <li><a>Shop</a></li>
+          <li><a>Features</a></li>
+          <li><a>Recipe</a></li>
+          <li><a>Hotline</a></li>
+        </ul>
+        <ul class="navbarSignList">
+          <li><a>Login</a></li>
+          <li><a><button>Sign Up</button></a></li>
+        </ul>
+      </div>
+      <div class="textArea">
+          <div class="backdropText1">Chefs </div> 
+          <div class="backdropText2">Academy</div>
+          <div class="backdropText3">Secrets</div>
+      </div>
+      <div class="floatingTextDiv">
+          <p class="floatingText">Strawberry season has started, let's cook!</p>
+      </div>
+      <div class="backdropIcon">
+        <i class="fa fa-play-circle" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="descriptiveSet">
+        <nav class="navbar2">
+            <div class="logoText">Recipes</div>
+            <form action="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" class="search" name="recipe" id="recipe" placeholder="Search recipes and more...">
+            </form>
+            <button class="sortBtn">sort by: <b>Newest</b>  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+        </nav>
+    </div>
+        
+    <div class="recipeLayout">
+        <ul class="recipeList">
+            <li><button><span class="material-icons">
+                local_pizza
+                </span> Pizza</button></li>
+            <li><button><span class="material-icons">
+                cake
+                </span> Desert</button></li>
+            <li><button><span class="material-icons">
+                ramen_dining
+                </span> Noodle</button></li>
+            <li><button><span class="material-icons">
+                local_bar
+                </span> Cocktails</button></li>
+            <li><button><span class="material-icons">
+                rice_bowl
+                </span> Salad</button></li>
+        </ul>
+        <div class="hide">
+            <ul class="secondRecipeList">
+                <li><button><span class="material-icons">
+                    local_pizza
+                    </span></button></li>
+                <li><button><span class="material-icons">
+                    cake
+                    </span></button></li>
+                <li><button><span class="material-icons">
+                    ramen_dining
+                    </span></button></li>
+                <li><button><span class="material-icons">
+                    local_bar
+                    </span></button></li>
+                <li><button><span class="material-icons">
+                    rice_bowl
+                    </span></button></li>
+            </ul>
+        </div>
+
+        <div class="mainDiv">
+            <div class="textArea2">
+                <div class="headerText">
+                    <h2>Citrus Salad <br /> with berries</h2>
+                </div>
+                <div class="descriptiveText">
+                    <p>In the season of fresh berries, I suggest making a very tasty and simple pie with this wonderful berry.</p>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Serving</td>
+                            <td>Cook Time</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><span class="material-icons">
+                                group
+                                </span></th>
+                            <th>1h 15m</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="sideDiv">
+            <div class="avocadoSalad">
+                <div class="avocadoPlate"></div>
+                <h2>Avocado Salad</h2>
+                <table class="table2">
+                    <thead>
+                        <tr>
+                            <td>Serving</td>
+                            <td>Cook Time</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><span class="material-icons">
+                                group
+                                </span></th>
+                            <th>1h 30m</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="chickenPasta">
+                <div class="pastaPlate"></div>
+                <h2>Green Chicken Pasta</h2>
+                <table class="table2">
+                    <thead>
+                        <tr>
+                            <td>Serving</td>
+                            <td>Cook Time</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><span class="material-icons">
+                                group
+                                </span></th>
+                            <th>1h 50m</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>

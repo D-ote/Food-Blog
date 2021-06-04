@@ -1,0 +1,500 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.backdrop {
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(207, 166, 54);
+    background-size: 56px 56px;
+    background-image:
+    linear-gradient(
+        135deg,
+        transparent 15%,
+        #f7a800 25%
+    ),
+     radial-gradient(
+        transparent 60px,
+        #ffffff 6px,
+        #ffffff 10px,
+        transparent 10px,
+        transparent 15px,
+        #ffffff 15px,
+        #ffffff 19px,
+        transparent 19px,
+        transparent 24px,
+        #ffffff 24px,
+        #ffffff 28px,
+        transparent 28px
+    )
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 10%;
+}
+
+.logo {
+    margin-right: 100px;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.navbarList li{
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: rgb(90, 88, 88);
+}
+
+.navbarList li a, .navbarSignList li a{    
+    transition: all 0.3s ease 0s;
+}
+
+.navbarList li a:hover, .navbarSignList li a:hover {
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+}
+
+.navbarSignList {
+    margin-left: auto;
+}
+
+.navbarSignList li {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: rgb(90, 88, 88);
+}
+
+.navbarSignList li:first-child {
+    margin-right: 20px;
+}
+
+.navbarSignList li a button {
+    color: black;
+    background-color: rgb(235, 227, 212);
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.navbarSignList li button:hover {
+    background-color: rgb(211, 210, 209);
+}
+
+.burger div {
+    width: 20px;
+    height: 3px;
+    background-color: rgb(211, 204, 204);
+    margin-bottom: 2px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.textArea {
+    padding: 30px 10%;
+    line-height: 1;
+}
+
+.backdropText1, .backdropText3 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 100px;    
+}
+
+.backdropText2{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 100px;  
+    margin-left: 80px;      
+}
+
+.floatingTextDiv {
+    position: absolute;
+    top: 200px;
+    left: 520px;
+    width: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.backdropIcon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 10%;
+    font-size: 80px;
+    color: red;
+    cursor: pointer;
+}
+
+.navbar2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 10%;
+}
+
+.logoText {
+    font-size: 45px;
+    font-family: 'Berkshire Swash', cursive;
+    padding-right: 90px;
+}
+
+form {
+    position: relative;
+}
+
+form .search {
+    width: 540px;
+    border-radius: 20px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+form i {
+    position: absolute;
+    z-index: 2;
+    color: gray;
+    left: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.sortBtn {
+    margin-left: auto;
+    width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.sortBtn:hover {
+    background-color: whitesmoke;
+}
+
+.sortBtn i {
+    transform: rotate(270deg);    
+}
+
+.sortBtn i:hover {
+    color: rgb(161, 129, 123);
+}
+
+.recipeLayout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+
+.recipeList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.recipeList li button {
+    margin-bottom: 20px;
+    width: 150px;
+    border-radius: 20px;
+    border: 1px solid rgb(214, 211, 211);
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.recipeList:last-child {
+    margin-bottom: 0 !important;
+}
+
+.recipeList li button:hover, .secondRecipeList li button:hover {
+    background-color: rgb(207, 166, 54);
+    box-shadow: 0 0 11px rgba(172, 146, 92, 2); 
+}
+
+.recipeList li button .material-icons {
+    margin-right: 30px;
+    background-color: rgb(211, 204, 204);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+.secondRecipeList {
+    display: flex;
+    list-style: none;
+}
+
+.secondRecipeList button {
+    margin-bottom: 20px;
+    width: 80px;
+    border-radius: 20px;
+    border: 1px solid rgb(214, 211, 211);
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s; 
+}
+
+.secondRecipeList button:not(:nth-child(5)) {
+    margin-right: 10px;
+}
+
+.mainDiv {
+    background-image: url("/HomeChefImages/berriess.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 540px;
+    background-color: rgb(247, 254, 255);
+    box-shadow: 0 0 11px rgba(202, 202, 202, 0.3);
+    height: 300px;
+    border-radius: 20px;
+}
+
+.textArea2 {
+    padding: 20px 0 0 245px;
+}
+
+.headerText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;   
+}
+
+.descriptiveText {
+    padding-top: 10px;
+    width: 260px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.table {
+    margin-top: 20px;    
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.table thead tr td, .table tbody tr th, .table2 thead tr td, .table2 tbody tr th {
+    padding-right: 40px;
+}
+
+.sideDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.avocadoSalad {
+    background-color: black;
+    color: white;
+    width: 350px;
+    font-family: 'Poppins', sans-serif;  
+    text-align: center; 
+    border-radius: 20px; 
+    box-shadow: 0 0 11px rgba(202, 202, 202, 2);
+}
+
+.chickenPasta {
+    background-color: white;
+    color: black;
+    width: 350px;
+    font-family: 'Poppins', sans-serif;  
+    text-align: center; 
+    border-radius: 20px; 
+    box-shadow: 0 0 11px rgba(202, 202, 202, 2);
+}
+
+.avocadoSalad h2, .chickenPasta h2 {
+    padding-top: 10px;
+}
+
+.table2 {
+    margin: 20px auto;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1100px) {
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .sortBtn {
+        margin-left: auto;
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .logoText {
+        font-size: 40px;
+        padding-right: 70px;
+    }
+
+    form .search {
+        width: 440px;
+    }    
+
+    /* .mainDiv {
+        background-image: none;
+        width: 300px;
+    } */
+
+    .textArea2 {
+        padding: 40px 0 0 25px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbarList {
+        display: none;
+    }    
+
+    .burger {
+        display: block;
+    }
+
+    .logo {
+        order: 2;
+        margin: 0 auto;
+    }
+
+    .burger {
+        order: 1;
+    }
+
+    .navbarSignList {
+        order: 3;
+        margin-left: 0;
+    }
+
+    .navbarSignList li:first-child {
+        display: none;
+    }
+
+    .backdropText1, .backdropText3 {
+        font-size: 80px;    
+    }
+    
+    .backdropText2{
+        font-size: 80px;  
+        margin-left: 80px;      
+    }
+
+    .floatingTextDiv {
+        position: absolute;
+        top: 160px;
+        left: 330px;
+        width: 150px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+    }
+
+    .sortBtn {
+        margin-left: auto;
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .logoText {
+        font-size: 40px;
+        padding-right: 70px;
+    }
+
+    form .search {
+        display: none;
+    }  
+
+    form i {
+        position: absolute;
+        z-index: 2;
+        color: gray;
+        top: -5px;
+    }  
+
+    .recipeList {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .recipeLayout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 10%;
+        flex-wrap: wrap;
+    }
+
+    .mainDiv {
+        margin-top: 20px;
+    }
+
+    .sideDiv {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .textArea {
+        text-align: center;
+    }
+    .backdropText1, .backdropText3 {
+        font-size: 60px;    
+    }
+    
+    .backdropText2{
+        font-size: 60px;  
+        margin-left: 0;      
+    }
+
+    .floatingTextDiv {
+        position: absolute;
+        top: 320px;
+        left: 330px;
+        width: 150px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+    }
+
+    .backdropIcon {
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 10%;
+        font-size: 60px;
+        color: red;
+    }
+}
